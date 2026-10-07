@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "name": "Prompting Chef Guide (1).md",
+      "path": "references/Prompting Chef Guide (1).md",
+      "type": "markdown"
+    },
+    {
+      "name": "Prompting Chef Must guidelines.txt",
+      "path": "references/Prompting Chef Must guidelines.txt",
+      "type": "text"
+    },
+    {
+      "name": "cookbook.openai.com-GPT-41 Prompting Guide.md",
+      "path": "references/cookbook.openai.com-GPT-41 Prompting Guide.md",
+      "type": "markdown",
+      "note": "Text extraction of the supplied GPT-4.1 Prompting Guide PDF"
+    }
+  ],
+  "guidelines": "Resolve paths relative to the skill root. Treat these files as local grounding sources for Prompting Chef. Preserve source terminology and do not silently replace source-derived guidance with unsupported general knowledge."
+}
