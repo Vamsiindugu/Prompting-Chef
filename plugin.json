@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "prompting-chef",
+  "version": "0.14.3",
+  "description": "Turn rough ideas, text, and draft prompts into production-ready prompts.",
+  "author": {
+    "name": "Vamsiindugu",
+    "url": "https://github.com/Vamsiindugu"
+  },
+  "repository": "https://github.com/Vamsiindugu/Prompting-Chef",
+  "license": "MIT",
+  "keywords": [
+    "prompt-engineering",
+    "prompts",
+    "ai",
+    "productivity"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Prompting Chef",
+        "shortDescription": "Ideas into production-ready prompts",
+        "longDescription": "Prompting Chef analyzes rough text, ideas, and draft prompts, then engineers them into clear, precise, production-ready prompts.",
+        "developerName": "Vamsiindugu",
+        "category": "Developer Tools",
+        "capabilities": [
+          "skills"
+        ],
+        "defaultPrompt": [
+          "Analyze the given text and convert this into a production-ready prompt.",
+          "Turn my rough idea into a production-ready prompt. Preserve my intent, resolve ambiguity, add the necessary context and constraints, and make the final prompt clear, precise, and ready to use.",
+          "Review the following prompt, identify its weaknesses, and rewrite it as a production-ready prompt with clear instructions, constraints, output requirements, and safeguards."
+        ],
+        "composerIcon": "./assets/gpt-icon.png",
+        "logo": "./assets/gpt-icon.png"
+      }
+    }
+  }
+}
