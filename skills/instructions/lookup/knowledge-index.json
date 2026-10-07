@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "name": "Prompting Chef Guide (1).md",
+      "path": "references/Prompting Chef Guide (1).md",
+      "type": "markdown"
+    },
+    {
+      "name": "Prompting Chef Must guidelines.txt",
+      "path": "references/Prompting Chef Must guidelines.txt",
+      "type": "text"
+    },
+    {
+      "name": "cookbook.openai.com-GPT-41 Prompting Guide.md",
+      "path": "references/cookbook.openai.com-GPT-41 Prompting Guide.md",
+      "type": "markdown"
+    },
+    {
+      "name": "cookbook.openai.com-GPT-41 Prompting Guide.pdf",
+      "path": "references/cookbook.openai.com-GPT-41 Prompting Guide.pdf",
+      "type": "pdf"
+    }
+  ],
+  "guidelines": "Resolve paths relative to the skill root. Use these files as bundled prompt-engineering grounding references. Preserve source terminology and framing; do not invent unsupported claims."
+}
