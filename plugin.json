@@ -8,6 +8,7 @@
     "url": "https://github.com/Vamsiindugu"
   },
   "repository": "https://github.com/Vamsiindugu/Prompting-Chef",
+  "homepage": "https://github.com/Vamsiindugu/Prompting-Chef",
   "license": "MIT",
   "keywords": [
     "prompt-engineering",
@@ -20,19 +21,21 @@
       "interface": {
         "displayName": "Prompting Chef",
         "shortDescription": "Ideas into production-ready prompts",
-        "longDescription": "Prompting Chef analyzes rough text, ideas, and draft prompts, then engineers them into clear, precise, production-ready prompts.",
+        "longDescription": "Analyze rough text, ideas, draft prompts, or AI outputs and turn them into precise, testable, production-ready prompts.",
         "developerName": "Vamsiindugu",
         "category": "Developer Tools",
         "capabilities": [
-          "skills"
+          "Prompt engineering"
         ],
         "defaultPrompt": [
           "Analyze the given text and convert this into a production-ready prompt.",
-          "Turn my rough idea into a production-ready prompt. Preserve my intent, resolve ambiguity, add the necessary context and constraints, and make the final prompt clear, precise, and ready to use."
+          "Turn my rough idea into a production-ready prompt while preserving intent, adding context, constraints, and output requirements."
         ],
-        "composerIcon": "./assets/gpt-icon.png",
-        "logo": "./assets/gpt-icon.png"
-      }
+        "brandColor": "#B97918",
+        "composerIcon": "./assets/Prompting Chef Metallic Logo.png",
+        "logo": "./assets/Prompting Chef Metallic Logo.png"
+      },
+      "onboardingSkill": "./skills/instructions/SKILL.md"
     }
   }
 }
