@@ -1,31 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-  <defs>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#fff4cf"/>
-      <stop offset="45%" stop-color="#ffd27a"/>
-      <stop offset="100%" stop-color="#b97918"/>
-    </linearGradient>
-    <radialGradient id="bg">
-      <stop offset="0%" stop-color="#171717"/>
-      <stop offset="100%" stop-color="#050505"/>
-    </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <rect width="1024" height="1024" rx="180" fill="url(#bg)"/>
-  <g fill="none" stroke="url(#gold)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-    <path d="M300 365c-78-13-104-113-28-159 37-22 78-17 108 5 16-82 131-108 183-30 54-80 171-38 170 49 69-8 126 46 122 108-3 48-38 87-84 94"/>
-    <path d="M330 405c30 22 73 31 182 31 109 0 152-9 182-31"/>
-    <path d="M350 435c15 62 27 95 54 123m216-123c-15 62-27 95-54 123"/>
-    <path d="M390 600c36 48 81 71 122 71s86-23 122-71"/>
-    <path d="M452 548c-26 30-64 36-99 12 15 51 78 70 132 28 54 42 117 23 132-28-35 24-73 18-99-12-16-19-50-19-66 0z"/>
-    <path d="M715 672c30-43 43-79 57-120l55 25-37 118"/>
-    <path d="M777 556l-20-49 38-62 20 49z"/>
-    <path d="M756 690c-25 43-43 76-67 112 38-9 83-33 111-55"/>
-    <path d="M681 832c76-19 147-48 203-91"/>
-  </g>
-  <circle cx="797" cy="522" r="9" fill="#111"/>
-  <text x="512" y="936" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" fill="url(#gold)">PROMPTING CHEF</text>
-</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prompting Chef
+
