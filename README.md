@@ -11,6 +11,8 @@ This GitHub repository is the canonical source for the plugin package.
 - Plugin manifest: `plugin.json`
 - Compatibility manifest: `.codex-plugin/plugin.json`
 - Skills: `skills/`
+- Knowledge sources: `skills/instructions/references/`
+- Knowledge index: `skills/instructions/lookup/knowledge-index.json`
 - Plugin icon/logo: `assets/gpt-icon.png`
 - GitHub-backed marketplace: `.agents/plugins/marketplace.json`
 
@@ -41,6 +43,10 @@ There are two supported models:
 
 - **Git-backed local/repo marketplace:** ChatGPT Desktop/Codex can install from this Git source. Refresh/upgrade the marketplace after repository changes.
 - **Workspace GitHub marketplace:** Workspace administrators can import this marketplace from GitHub, after which ChatGPT performs daily marketplace synchronization. This is the supported automatic cloud-sync path for workspace-managed plugins.
+
+## Knowledge sources
+
+Prompting Chef includes the provided Prompting Chef system constitution, mandatory guidelines, and an extracted Markdown copy of the supplied OpenAI GPT-4.1 Prompting Guide PDF. The source materials are indexed in `skills/instructions/lookup/knowledge-index.json` and are used for source-grounded prompt engineering.
 
 ## Development
 
