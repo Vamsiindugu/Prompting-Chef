@@ -1,4 +1,0 @@
-interface:
-  default_prompt: Analyze the given text and convert this into a production-ready prompt.
-  display_name: Prompting Chef
-  short_description: Ideas into production-ready prompts
