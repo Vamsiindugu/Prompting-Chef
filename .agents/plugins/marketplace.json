@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/marketplace.schema.json",
+  "name": "prompting-chef-marketplace",
+  "interface": {
+    "displayName": "Prompting Chef"
+  },
+  "plugins": [
+    {
+      "name": "prompting-chef",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Vamsiindugu/Prompting-Chef.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
