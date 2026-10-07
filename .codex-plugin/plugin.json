@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "Vamsiindugu"
+  },
+  "description": "Turn rough ideas, text, and draft prompts into production-ready prompts.",
+  "interface": {
+    "capabilities": [
+      "skills"
+    ],
+    "category": "Developer Tools",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "Analyze the given text and convert this into a production-ready prompt.",
+      "Turn my rough idea into a production-ready prompt. Preserve my intent, resolve ambiguity, add the necessary context and constraints, and make the final prompt clear, precise, and ready to use.",
+      "Review the following prompt, identify its weaknesses, and rewrite it as a production-ready prompt with clear instructions, constraints, output requirements, and safeguards."
+    ],
+    "developerName": "Vamsiindugu",
+    "displayName": "Prompting Chef",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "Prompting Chef analyzes rough text, ideas, and draft prompts, then engineers them into clear, precise, production-ready prompts.",
+    "shortDescription": "Ideas into production-ready prompts"
+  },
+  "name": "prompting-chef",
+  "skills": "./skills/",
+  "version": "0.14.3"
+}
