@@ -1,64 +1,49 @@
 # Prompting Chef
 
-**Ideas into production-ready prompts.**
+Ideas into production-ready prompts.
 
-Prompting Chef converts rough text, ideas, requirements, existing prompts, and AI outputs into production-ready prompts.
+## Canonical source
 
-## Repository is the source of truth
+GitHub main is the source of truth:
+https://github.com/Vamsiindugu/Prompting-Chef
 
-This GitHub repository is the canonical source for the plugin package.
+## Production layout
 
-- Plugin manifest: `plugin.json`
-- Compatibility manifest: `.codex-plugin/plugin.json`
-- Skills: `skills/`
-- Knowledge sources: `skills/instructions/references/`
-- Knowledge index: `skills/instructions/lookup/knowledge-index.json`
-- Plugin icon/logo: `assets/gpt-icon.png`
-- GitHub-backed marketplace: `.agents/plugins/marketplace.json`
+- plugin.json
+- .codex-plugin/plugin.json
+- .agents/plugins/marketplace.json
+- assets/Prompting Chef Metallic Logo.png
+- skills/instructions/SKILL.md
+- skills/instructions/agents/openai.yaml
+- skills/instructions/lookup/knowledge-index.json
+- skills/instructions/references/
 
-## Install and keep it in sync with ChatGPT Desktop / Codex
+## Install from GitHub
 
-This repository is prepared as a Git-backed marketplace source.
+For ChatGPT Desktop/Codex, add the repository marketplace:
 
-1. Connect GitHub to ChatGPT/Codex.
-2. Add this marketplace/repository as a plugin marketplace.
-3. Install **Prompting Chef** from the marketplace.
-4. Keep the marketplace source on `main` to receive future commits.
-5. After changes land in GitHub, refresh/upgrade the marketplace in the client so the installed copy picks up the new files.
-
-For Codex CLI:
-
-```bash
 codex plugin marketplace add Vamsiindugu/Prompting-Chef --ref main
+
+Then install Prompting Chef from the Plugins Directory. After repository changes, run:
+
 codex plugin marketplace upgrade prompting-chef-marketplace
-```
 
-For the ChatGPT desktop app, use the Plugins Directory and select the Git-backed marketplace source. The desktop client loads the plugin from the marketplace installation.
+Restart or refresh the Plugins Directory when necessary because installed plugins are cached locally.
 
-## Important GitHub ↔ ChatGPT limitation
+For ChatGPT Business, Enterprise, or Edu, a workspace administrator can import this repository as a GitHub marketplace. OpenAI supports daily sync for imported marketplaces and a manual Sync now action.
 
-GitHub is the canonical source, but a personal ChatGPT plugin does **not** currently follow arbitrary GitHub commits as an always-on personal cloud sync.
+## Starter prompts
 
-There are two supported models:
-
-- **Git-backed local/repo marketplace:** ChatGPT Desktop/Codex can install from this Git source. Refresh/upgrade the marketplace after repository changes.
-- **Workspace GitHub marketplace:** Workspace administrators can import this marketplace from GitHub, after which ChatGPT performs daily marketplace synchronization. This is the supported automatic cloud-sync path for workspace-managed plugins.
+1. Analyze the given text and convert this into a production-ready prompt.
+2. Turn my rough idea into a production-ready prompt while preserving intent, adding context, constraints, and output requirements.
 
 ## Knowledge sources
 
-Prompting Chef includes the provided Prompting Chef system constitution, mandatory guidelines, and an extracted Markdown copy of the supplied OpenAI GPT-4.1 Prompting Guide PDF. The source materials are indexed in `skills/instructions/lookup/knowledge-index.json` and are used for source-grounded prompt engineering.
+The skill includes the Prompting Chef Guide, mandatory guidelines, and a Markdown extraction of the supplied OpenAI GPT-4.1 Prompting Guide. The PDF was used as the source for that extraction; this repository stores the extracted Markdown because the available GitHub write path is text-oriented.
 
 ## Development
 
-Update the plugin by editing the files in this repository. Keep `main` as the release branch for the marketplace entry.
-
-Recommended release process:
-
-1. Edit `skills/` or plugin metadata.
-2. Validate the plugin structure.
-3. Bump `version` in `plugin.json` and `.codex-plugin/plugin.json`.
-4. Commit and push to `main`.
-5. Refresh the marketplace in ChatGPT Desktop/Codex, or wait for the next workspace marketplace sync.
+Keep plugin.json and .codex-plugin/plugin.json on the same version. Keep only the two starter prompts. Keep the icon paths pointed at an existing square asset. Commit changes to main, then refresh or sync the marketplace.
 
 ## License
 
