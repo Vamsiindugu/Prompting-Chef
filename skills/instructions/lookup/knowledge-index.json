@@ -1,9 +1,24 @@
 {
   "version": "1.0.0",
   "sources": [
-    {"name": "Prompting Chef Guide (1).md", "path": "references/Prompting Chef Guide (1).md", "type": "markdown"},
-    {"name": "Prompting Chef Must guidelines.txt", "path": "references/Prompting Chef Must guidelines.txt", "type": "text"},
-    {"name": "cookbook.openai.com-GPT-41 Prompting Guide.md", "path": "references/cookbook.openai.com-GPT-41 Prompting Guide.md", "type": "markdown", "note": "Text extraction of the supplied GPT-4.1 Prompting Guide PDF"}
+    {
+      "name": "Prompting Chef Guide (1).md",
+      "path": "references/Prompting Chef Guide (1).md",
+      "type": "markdown",
+      "role": "Internal prompt-engineering reference; follow current SKILL.md if guidance conflicts."
+    },
+    {
+      "name": "Prompting Chef Must guidelines.txt",
+      "path": "references/Prompting Chef Must guidelines.txt",
+      "type": "text",
+      "role": "Mandatory project guidance; apply when relevant and consistent with current SKILL.md."
+    },
+    {
+      "name": "cookbook.openai.com-GPT-41 Prompting Guide.md",
+      "path": "references/cookbook.openai.com-GPT-41 Prompting Guide.md",
+      "type": "markdown",
+      "role": "Extracted text of the supplied OpenAI GPT-4.1 Prompting Guide PDF; source-derived reference, not a universal rulebook."
+    }
   ],
-  "guidelines": "Resolve paths relative to the skill root. Use these files as bundled prompt-engineering grounding references. Preserve source terminology and framing; do not invent unsupported claims."
+  "guidelines": "Resolve paths relative to the skill directory. Read only relevant sources for the task. Preserve source terminology and framing, distinguish source-supported content from inference, and do not invent unsupported claims. Current SKILL.md operating rules take precedence over conflicting reference text. The PDF itself is not required at runtime; the Markdown extraction is the packaged source."
 }
